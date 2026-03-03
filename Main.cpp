@@ -242,7 +242,7 @@ int main() {
     vao.Bind();
     shaderProgram.Activate();
     glLineWidth(LINE_WIDTH_PX);
-    glDrawArrays(GL_LINES, 0, vertices.size());
+    glDrawArrays(GL_LINES, 0, vertices.size() / 2);
 
     glfwSwapBuffers(window);
     glfwPollEvents();
