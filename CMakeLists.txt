@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.14)
+project(Tic_Tac_Toe)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+add_executable(Main Main.cpp glad/src/glad.c)
+target_include_directories(Main PRIVATE glad/include)
+target_link_libraries(Main PRIVATE glfw GL ${CMAKE_DL_LIBS})
